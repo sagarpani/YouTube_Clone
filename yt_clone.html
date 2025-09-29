@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube_clone</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <label for="nav-toggle" class="hamburger-container">
+                <img class="hamburger" src="Icons/hamburger.svg" alt="hamburger-menu">
+            </label>
+            <div class="ytlogo-container">
+                <img class="ytlogo" src="Icons/ytlogo.svg" alt="">
+            </div>
+        </div>
+
+        <div class="middle-section">
+            <div class="search-space">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <button class="search-button">
+                    <img class="search-icon" src="Icons/search.svg" alt="search-icon">
+                </button>
+            </div>
+
+
+            <div class="mic-space">
+                <button class="micicon-container">
+                    <svg class="micicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e3e3e3">
+                        <path
+                            d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm-40 280v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <button class="create-section">
+                <img class="plus-icon" src="Icons/plus-icon.svg" alt="plus">
+                <p>Create</p>
+            </button>
+
+            <div class="notification-space">
+                <button class="notification-icon-container">
+                    <img src="Icons/notificationbell.svg" alt="notificationicon">
+                    <div class="notification-number">
+                        9+
+                    </div>
+                </button>
+            </div>
+
+            <div class="user-details-section">
+                <img class="user-pic" src="Icons/Profile-thumbnail-header.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Checkbox to toggle -->
+        <input type="checkbox" id="nav-toggle">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <label for="nav-toggle" class="hamburger-container">
+                    <img class="hamburger" src="Icons/hamburger.svg" alt="hamburger-menu">
+                </label>
+                <div class="ytlogo-container">
+                    <img class="ytlogo" src="Icons/ytlogo.svg" alt="">
+                </div>
+            </div>
+
+            <nav>
+                <a href="#">
+                    <div class="icon">
+                        <img src="Icons/home.svg" alt="home-icon">
+                    </div>
+                    <span>Home</span>
+                </a>
+                <a href="#">
+                    <div class="icon">
+                        <img src="Icons/shorts.svg" alt="shorts-icon">
+                    </div>
+                    <span>Shorts</span>
+                </a>
+                <a href="#">
+                    <div class="icon">
+                        <img src="Icons/subscription.svg" alt="subscription-icon">
+                    </div>
+                    <span>Subscriptions</span>
+                </a>
+                <a href="#">
+                    <div class="icon">
+                        <img src="Icons/profile.svg" alt="profile-icon">
+                    </div>
+                    <span>You</span>
+                </a>
+
+            </nav>
+        </aside>
+
+        <!-- overlay (click to close) -->
+        <label for="nav-toggle" class="overlay"></label>
+
+        <div class="supreme_container">
+            <div class="supreme_content_container">
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/BabaYaga.jpeg" alt="thumbnail">
+                        <div class="video-time">4.20</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture"
+                                src="thumbnails/JohnWick.jpg" alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">John Wick : Even Death Trembles at His Silence</p>
+                            <p class="profile-name"> Baba Yaga </p>
+                            <p class="views"> 3M views &#183; 2 months ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/Ghost.jpeg" alt="thumbnail">
+                        <div class="video-time">6.10</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="thumbnails/Ghost-3.jpeg" alt="profile-picture">
+
+                        </div>
+
+                        <div class="content">
+                            <p class="title">Ghost : More Than a Soldier More Than a Man</p>
+                            <p class="profile-name"> Marques Brownlee </p>
+                            <p class="views"> 4M views &#183; 11 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/Monkey King.jpeg" alt="thumbnail">
+                        <div class="video-time">3.18</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture" src="thumbnails/Cave.jpg"
+                                alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">Immortal Rebel: Chronicles of the Monkey King</p>
+                            <p class="profile-name"> Monkey King - Sun Wukong </p>
+                            <p class="views"> 5.6M views &#183; 6 months ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/Itachi.jpg" alt="thumbnail">
+                        <div class="video-time">7.15</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture" src="thumbnails/Giyu.jpg"
+                                alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">Itachi Uchiha : A Legacy That Outlived His Own Life</p>
+                            <p class="profile-name"> Giyu Tomioka. </p>
+                            <p class="views"> 3.4M views &#183; 6 months ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/kung-fu-panda-2.jpeg" alt="thumbnail">
+                        <div class="video-time">4.40</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture"
+                                src="thumbnails/Kung fu panda.jpeg" alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">Kung Fu, Dumplings, and the Dragon Warrior</p>
+                            <p class="profile-name"> The Noodle Corner </p>
+                            <p class="views"> 3.4M views &#183; 7 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/Spidy.jpeg" alt="thumbnail">
+                        <div class="video-time">9.01</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture"
+                                src="thumbnails/Loki Series (TVA) Poster.jpeg" alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">Spidey x Gwen: Let Me Down Slowly</p>
+                            <p class="profile-name"> Loki Laufeyson - God of Mischief </p>
+                            <p class="views"> 2.4M views &#183; 9 months ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/Woman.jpeg" alt="thumbnail">
+                        <div class="video-time">6.37</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture"
+                                src="thumbnails/woman2.jpeg" alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">The Eternal Muse : Where Tradition Meets Timeless Grace</p>
+                            <p class="profile-name"> Chitravali Diaries </p>
+                            <p class="views"> 2.9M views &#183; 4 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/Aot.jpeg" alt="thumbnail">
+                        <div class="video-time">5.18</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture" src="thumbnails/Aot 2.jpeg"
+                                alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">Eren x Mikasa: Hope Beyond the Horizon</p>
+                            <p class="profile-name"> Zeke Yeager </p>
+                            <p class="views"> 8.9M views &#183; 5 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/Batman Wallpaper.jpeg" alt="thumbnail">
+                        <div class="video-time">9.20</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture"
+                                src="thumbnails/Batman Wallpaper 2.jpeg" alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">Some Chapter: The Birth of a Shadow</p>
+                            <p class="profile-name"> Bruce Wayne </p>
+                            <p class="views"> 6.9M views &#183; 1 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/ironman.jpg" alt="thumbnail">
+                        <div class="video-time">6.20</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture"
+                                src="thumbnails/ironman2.jpg" alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">Why Your Golden Boy Tony Stark is Actually My Spirit Animal (And Don’t Tell Wolverine)</p>
+                            <p class="profile-name"> Deadpool Diaries </p>
+                            <p class="views"> 1M views &#183; 2 months ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/joker.jpg" alt="thumbnail">
+                        <div class="video-time">1.20</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture"
+                                src="thumbnails/joker2.jpg" alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">The Laughing Abyss: When Chaos Dances with Justice</p>
+                            <p class="profile-name"> Jester’s Gambit </p>
+                            <p class="views"> 4.7M views &#183; 3 years ago </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="thumbnail-container">
+                        <img class="thumbnail" src="thumbnails/got.jpg" alt="got-thumbnail">
+                        <div class="video-time">5.40</div>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-picture-container"> <img class="profile-picture"
+                                src="thumbnails/got2.jpg" alt="profile-picture"> </div>
+                        <div class="content">
+                            <p class="title">Beneath the Ashen Sky, a Throne of Whispered Promises Awaits</p>
+                            <p class="profile-name"> Daenerys Targaryen </p>
+                            <p class="views"> 6.4M views &#183; 5 years ago </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

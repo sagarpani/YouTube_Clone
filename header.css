@@ -1,0 +1,305 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    padding: 1px 16px 0px 16px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid rgba(202, 202, 202, 0.4);
+    z-index: 100;
+}
+
+.left-section{    
+    width: 201px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+ 
+}
+    
+.hamburger-container{
+    width: 40px;
+    padding: 8px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.hamburger-container:hover{
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+}
+
+.hamburger{
+    width: 24px;
+    height: 24px;   
+}
+
+.ytlogo-container{
+    width: 129px;
+    height: 56px;
+    padding: 18px 14px 18px 16px;
+}
+.ytlogo{
+    width: 93px;
+    height: 20px;    
+}
+
+.middle-section{   
+    flex: 0 1 732px;
+    min-width: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;    
+}
+
+.micicon-container{
+    min-width: 0;
+    margin-left: 12px;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;
+}
+
+.micicon-container:hover{
+    background-color:rgb(230, 230, 230);
+}
+
+.mic-space{
+    position: relative;
+}
+
+.micicon{
+    fill: rgb(36, 36, 36);
+    height: 24px;
+    width: 24px;
+}
+
+.search-space{
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    margin: 0 0 0 40px;
+    height: 40px;
+    padding: 0 4px;
+    position: relative;
+    color: black;
+}
+
+ .search-bar{
+    position: relative;
+    align-items: center;
+    border: 1px solid;
+    border-color: rgb(198, 198, 198);
+    border-right: 0;
+    background-color: white;
+    box-shadow: inset 0 1px 2px rgb(238, 238, 238);
+    border-radius: 40px 0 0 40px;
+    margin-left: 32px;
+    padding: 0 4px 0 16px;
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    cursor: text;
+}
+
+.search-bar input {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    padding: 1px 0;
+    width: 100px;
+    border: none;
+    box-shadow: none;
+    color: inherit;
+    outline: none;
+    font-size: 16px;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+.search-bar:focus-within{
+    margin-left: 0;
+    padding: 2px 4px 2px 48px;
+    border: 1px solid rgb(28, 98, 185);
+    box-shadow:inset 0 1px 2px rgba(0,0,0, 0.3);
+}
+
+input::placeholder{
+    font-family: 'Roboto', Arial;
+    font-size: 16px;    
+}
+
+.search-button{
+    position: relative;
+    border: 1px solid #d3d3d3;
+    background-color: rgb(250, 250, 250);
+    width: 64px;
+    border-radius:0 40px 40px 0;
+    
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+} 
+
+.search-button:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.right-section{
+    padding-left: 12px;
+    min-width: 225px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.create-section{   
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    gap: 5px;   
+    padding: 0 16px 0 8px;
+    height: 36px; 
+    border: none;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.create-section:hover{
+    background-color: rgb(230, 230, 230);;
+}
+
+.plus-icon{
+    height: 27px;
+    width: 27px;
+    margin-right: 0;
+    fill: currentColor;
+}
+
+.notification-space{
+    margin-right: px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-icon-container{
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+}
+
+.notification-icon-container:hover{
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+}
+
+.notification-number{
+    background-color: #e1002d;
+    color: white;
+    width: 26px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 4px;
+    display: inline-block;
+    padding: 0px 4px;    
+}
+
+.user-details-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 6px;
+    width: 60px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;    
+}
+
+.user-pic{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0 8px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: block;
+}
+
+@media (max-width: 656px) {
+    .header{
+        padding: 0 8px;
+    }
+
+    .middle-section{
+        flex:1;
+        min-width: 104px;
+        justify-content: flex-end;
+    }
+
+    .micicon-container{
+    margin-left: 0;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;    
+    }
+
+    .search-space{
+        visibility: hidden;
+        min-width: 40px;    
+    }
+
+    .search-bar{
+        display: none;
+    }
+
+    .search-icon{
+        display: block;
+        visibility: visible;
+    }
+}
+
+
