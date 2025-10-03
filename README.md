@@ -7,7 +7,7 @@ This project showcases **frontend fundamentals**, modern CSS techniques, and res
 
 ## Demo
 
-https://github.com/sagarpani/YouTube_Clone/blob/main/thumbnails/Project-screenshot.png
+https://sagarpani.github.io/YouTube_Clone
 
 ---
 
